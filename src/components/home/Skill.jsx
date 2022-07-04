@@ -49,7 +49,7 @@ const Skill = ({ SkillRef }) => {
                     <h1>{val.title}</h1>
                     <p>{val.para}</p>
                     <p>{val.para1}</p>
-                    <a href="https://github.com/lsk21007/myCV/raw/main/Shukun%20Liu'resume-220630.docx"><button className='primary-btn'>Download CV</button></a>
+                    <button className='primary-btn'>Download CV</button>
                   </div>
                 )
               })}
