@@ -17,7 +17,7 @@ const Home = ({homeRef}) => {
               web developer
             </h1>
             <p>Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button className='primary-btn'>Download CV</button>
+            <a href="https://github.com/lsk21007/Portfolio/raw/main/Resume.pdf"><button className='primary-btn'>Download CV</button></a>
           </div>
         </div>
       </section>
