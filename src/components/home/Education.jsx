@@ -1,25 +1,36 @@
 import React from "react"
+// Import Worker
+import { Worker } from '@react-pdf-viewer/core';
+// Import the main Viewer component
+import { Viewer } from '@react-pdf-viewer/core';
+import Certificate from "../../works/certificate.pdf"
 
-const Education = ({EducationRef}) => {
+const Education = ({ EducationRef }) => {
   const data = [
     {
       id: "9/2021-7/2022",
       heading: "New York Institude of Technology",
       dilopma: "Master's Degree of Energy Management",
-      desc: "Lorem ipsum dolor sit amet, provid adipisicing elit. Aliquam dolorum nu illo similique! Impedit.",
+      desc: "Study energy, basic coding language, and data analysis. Use Python to run models, visualize the them and analyze in projects.",
+      work: Certificate
     },
     {
       id: "9/2021-12/2021",
-      heading: "Team Management",
+      heading: "Udemy",
       dilopma: "Certificate of Web Development Bootcamp",
-      desc: "Front-End: React, Javascript, Typescript, HTML5, CSS3, Bootstrap. Back-End: Node.js, Express, MongoDB.",
+      desc: "Front-End: React, Javascript, Typescript, HTML5, CSS3, Bootstrap. Back-End: Node.js, Express, MongoDB. Build 16 web projects individually",
+      work: Certificate
     },
     {
       id: "3/2021-8/2021",
-      heading: "Front-End Developer Tutorial",
-      desc: "HTML5, CSS3, Javascript, React. 111 11111 11111111 11111 11111111 111111 1111111 11111111 1111 111",
+      heading: "ITheima",
+      dilopma: "Front-End Developer Tutorial",
+      desc: "Courses including: HTML, CSS, React, JavaScript, TypeScript, jQuery, Bootstrap, MUI, etc. Learn basic data structure.",
     },
   ]
+
+  console.log(data[0].work);
+
   return (
     <>
       <section ref={EducationRef} className='Branding'>
@@ -27,20 +38,26 @@ const Education = ({EducationRef}) => {
           <h3>Education</h3>
         </div>
         <div style={{ display: "flex", justifyContent: 'center' }}>
-          <h2 style={{fontSize:'40px', marginBottom:'20px'}}>Focus on Wed Development Study</h2>
+          <h2 style={{ fontSize: '40px', marginBottom: '20px' }}>Focus on Wed Development Study</h2>
         </div>
         <div className='container grid'>
           {data.map((value, index) => {
             return (
-              <div key={index} className='box flex'>
-                <div className='text'>
-                  <h1>{value.id}</h1>
+              <div key={index}>
+                <div className='box flex'>
+                  <div className='text'>
+                    <h1>{value.id}</h1>
+                  </div>
+                  <div className='para'>
+                    <h2>{value.heading}</h2>
+                    <h4 style={{ marginBottom: '10px' }}>{value.dilopma}</h4>
+                    <p style={{ marginBottom: '20px' }}>{value.desc}</p>
+                  </div>
                 </div>
-                <div className='para'>
-                  <h2>{value.heading}</h2>
-                  <h4 style={{ marginBottom: '10px' }}>{value.dilopma}</h4>
-                  <p>{value.desc}</p>
-                </div>
+                {value.work &&
+                  <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.14.305/build/pdf.worker.min.js">
+                    <Viewer fileUrl={value.work}></Viewer>
+                  </Worker>}
               </div>
             )
           })}

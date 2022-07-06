@@ -1,7 +1,7 @@
 const Blogdata = [
   {
     id: 1,
-    url: "https://lsk21007.github.io/recipesWeb/",
+    url: "https://lsk21007.github.io/Recipes/",
     title: "Gourmet cooking teaching website",
     cover: "./assets/projects/Recipes.png",
   },

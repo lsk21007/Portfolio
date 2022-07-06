@@ -4,8 +4,8 @@ const Introduction = ({ IntroductionRef }) => {
   const data = [
     {
       title: "Self Introduction",
-      heading: "Not The Best, But The Most Protential",
-      desc: "Seven years of web marketing planning experience, familiar with users' browsing habits. Built many website programs myself by using the MERN stack that learned from tutorials and university. With the skills and projects, I got a chance to be an internship front-end developer on a travel site and have good cooperation with colleagues. Programming is my passion. Learning is my style. I'm not the best candidate, but I'm the one with the most potential.",
+      heading: "Not The Best, But The Most Potential",
+      desc: "As a big fan of programming, I would like to use my website planning and coding skills to design, develop and deploy apps. Every time bug I fix, every new feature I create satisfies me. I’m driven by continually trying to elevate my level and trying my best to achieve more goals. Now, I’m well prepared to contribute to my next company and still getting better every day. I may not be the best, but the most potential.",
     },
   ]
   return (
