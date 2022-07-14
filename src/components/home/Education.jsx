@@ -11,15 +11,15 @@ const Education = ({ EducationRef }) => {
       id: "9/2021-7/2022",
       heading: "New York Institude of Technology",
       dilopma: "Master's Degree of Energy Management",
-      desc: "Study energy, basic coding language, and data analysis. Use Python to run models, visualize the them and analyze in projects.",
-      work: Certificate
+      desc: "Study energy management, coding language, and data analysis. Run energy consumption models through Python, visualize results and finish optimization reports to achieve energy savings.",
+      // work: Certificate
     },
     {
       id: "9/2021-12/2021",
       heading: "Udemy",
       dilopma: "Certificate of Web Development Bootcamp",
       desc: "Front-End: React, Javascript, Typescript, HTML5, CSS3, Bootstrap. Back-End: Node.js, Express, MongoDB. Build 16 web projects individually",
-      work: Certificate
+      // work: Certificate
     },
     {
       id: "3/2021-8/2021",

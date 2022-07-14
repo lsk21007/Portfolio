@@ -18,7 +18,7 @@ const Home = ({ homeRef }) => {
             </h1>
             <br />
             <p style={{margin:0}}>• 10 hours of web programming study per day for 1.5 years. Familiar with designing, developing, and deploying apps.</p>
-            <p style={{margin:0}}>• 7 years of website product planning, webpage analysis, and commercialization, expertise in making websites more user-friendly.</p>
+            <p style={{margin:0}}>• 7 years of website product planning, webpage designing, and commercialization, expertise in making websites more user-friendly.</p>
             <p>• Great passion for web development, eager to learn. Keep improving my coding skills every day.</p>
             <a href="https://github.com/lsk21007/Portfolio/raw/main/Resume.pdf"><button className='primary-btn'>Download CV</button></a>
           </div>
