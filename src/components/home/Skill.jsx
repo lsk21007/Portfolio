@@ -40,7 +40,7 @@ const Skill = ({ SkillRef }) => {
               <Progress done='85' title='HTML&CSS' />
               <Progress done='90' title='JAVASCRIPT' />
               <Progress done='75' title='TYPESCRIPT' />
-              <Progress done='70' title='REDUX' />
+              <Progress done='80' title='REDUX' />
             </div>
             <div className='right mtop'>
               {data.map((val, index) => {
