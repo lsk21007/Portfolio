@@ -3,20 +3,20 @@ import React from "react"
 const Data = () => {
   const data = [
     {
-      num: "5",
-      text: "NEW PAGES DESIGNING",
+      num: "4",
+      text: "Number of applications maintained",
     },
     {
-      num: "1.3+",
-      text: "MILLION DAILY VIEWS",
+      num: "150+",
+      text: "Number of fixed bugs",
     },
     {
-      num: "25+",
-      text: "MILLION DOLLAR INCOMES",
+      num: "10+",
+      text: "Number of new features",
     },
     {
-      num: "3",
-      text: "EMPLOYEES MANAGEMENT",
+      num: "200+",
+      text: "Number of tested cases",
     }
   ]
   return (

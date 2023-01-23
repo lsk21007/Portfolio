@@ -1,45 +1,50 @@
-import React from "react"
+import React from "react";
 
-const Experiences = ({ExperiencesRef}) => {
-
+const Experiences = ({ ExperiencesRef }) => {
   const data = [
     {
-      title1: "06-2022/ present - Front-End Deveoper \n IFENG (Auto channel)",
-      phrase1: "1. Build new feature: \n Collaborated with senior-level developers to build a lucky draw feature and use React Router to link the new page to other web pages. \n 2. Maintain websites: \n Assisted the development team in maintaining websites including content updates, debugging, feature enhancements and testing.\n 3. Optimize compatibility: \n Developed cross-device compatibility and optimized mobile web layout.",
-      title2: "08-2014/ 08-2021 - Senior Web Planning Manager \n XCAR",
-      desc2: "1. Webpage Designing:\n Design new channels (EV, Cross Country Channel) and features (Short Video Sharing), provide webpage layout, features and article types ideas to the web development department.\n 2. Website Analysing:\n Analyze users browsing preferences by utilizing the data of users' paths from the data platform. Provide the best plan for the client to cooperate.\n 3. Web Event Planning:\n According to the data analysis result, designing web activities to attract the users and promote the product for clients.",
+      title1: "05-2022/ present - Web Deveoper \n Goopter eCommerce Solutions",
+      phrase1:
+        "• Maintain 4 applications, including the business admin system, business management desktop app, sales management web, and web with React, Typescript, and Redux. \n • Create new features including doordash delivery service, third-party delivery service setting, etc., and enhance existing data by using dynamic coding logic to make code clean and reusable. \n • Develop website design based on the specific layouts, components, animations, and colors from mock-ups.\n• Collaborate closely with UX designers, product managers, and backend developers to build user-friendly web experiences.\n• Test existing features, diagnose bugs and discover corner cases to ensure the applications work well.\n• Verify pull requests from other developers and gave feedback on any potential improvements.\n• Work on agile development teams.",
+      title2: "08-2020/ 05-2021 - Junior Front-End Developer \n IFENG (Auto channel)",
+      desc2:
+        "• Corporated with other team members in maintaining websites, including new features development, debugging, and code testing from the ticket system by using React and JavaScript.\n • Created new features for the Year-end promotion campaign to collect target audiences’ information.\n • Developed 12 mobile web application’s UI pages according to the UI designer’s mock-up.\n• Provide support to clients for instruction, technical issues, or feature requests.\n• Test processes and test specs for projects.\n• Building reusable code for future use.",
     },
-  ]
+  ];
   return (
     <>
-      <section ref={ExperiencesRef} className='about' style={{ marginBottom: '20px' }}>
-        <div className='container'>
+      <section
+        ref={ExperiencesRef}
+        className="about"
+        style={{ marginBottom: "20px" }}
+      >
+        <div className="container">
           {data.map((value, index) => {
             return (
-              <span key={index}  className='flex'>
-                <div className='mtop left'>
-                  <div className='heading'>
+              <span key={index} className="flex">
+                <div className="mtop left">
+                  <div className="heading">
                     <h3>About Me</h3>
-                    <h1 style={{ whiteSpace: 'pre-line' }}>{value.title1}</h1>
+                    <h1 style={{ whiteSpace: "pre-line" }}>{value.title1}</h1>
                   </div>
-                  <p style={{ whiteSpace: 'pre-line'}}>{value.phrase1}</p>
+                  <p style={{ whiteSpace: "pre-line" }}>{value.phrase1}</p>
                 </div>
-                <div className='mtop right'>
-                  <div className='heading'>
+                <div className="mtop right">
+                  <div className="heading">
                     <h3>&nbsp;</h3>
                   </div>
-                  <div className='heading'>
-                    <h1 style={{ whiteSpace: 'pre-line' }}>{value.title2}</h1>
+                  <div className="heading">
+                    <h1 style={{ whiteSpace: "pre-line" }}>{value.title2}</h1>
                   </div>
-                  <p style={{ whiteSpace: 'pre-line' }}>{value.desc2}</p>
+                  <p style={{ whiteSpace: "pre-line" }}>{value.desc2}</p>
                 </div>
               </span>
-            )
+            );
           })}
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Experiences
+export default Experiences;

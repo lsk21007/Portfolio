@@ -17,9 +17,9 @@ const Home = ({ homeRef }) => {
               web developer
             </h1>
             <br />
-            <p style={{margin:0}}>• Development and maintenance experiences in front-end programming by writing clean, elegant, and reusable code.</p>
-            <p style={{margin:0}}>• 7 years of website product planning, webpage designing, and commercialization, expertise in making websites more user-friendly.</p>
-            <p>• Great passion for web development, eager to learn. Keep improving my coding skills every day.</p>
+            <p style={{margin:0}}>• Extensive web development working experience with hands-on designing, developing, and implementing applications skills.</p>
+            <p style={{margin:0}}>• Detail-oriented developer, strong focus on clean and effective code, keen awareness of potential problems.</p>
+            <p>• Great passion for web development, eager to teach and learn. Good cooperation with team members.</p>
             <a href="https://github.com/lsk21007/Portfolio/raw/main/Resume.pdf"><button className='primary-btn'>Download CV</button></a>
           </div>
         </div>
