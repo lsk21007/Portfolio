@@ -29,8 +29,6 @@ const Education = ({ EducationRef }) => {
     },
   ]
 
-  console.log(data[0].work);
-
   return (
     <>
       <section ref={EducationRef} className='Branding'>
